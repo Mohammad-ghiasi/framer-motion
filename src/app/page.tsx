@@ -1,20 +1,28 @@
-import PageContainerMotion from '@/motions/PageContainer';
+"use client"
+import { Box, Text } from '@chakra-ui/react';
+import { motion } from 'framer-motion'
 import Link from 'next/link';
 
 const HomePage = () => {
   return (
-    <PageContainerMotion
+    <Box
       className="p-10"
     >
-      <h1>Home Page</h1>
-      <p>Welcome to the Home Page</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nulla quas maxime quam consectetur tenetur in quibusdam, voluptatibus excepturi iure aliquam hic quasi, sapiente quae est praesentium nemo at et.
+      <motion.p
+        drag
+        dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
+        dragElastic={.6}
+        className='m-10 text-center cursor-pointer'
+      >mohammad ghiasi</motion.p>
+      <Text>Home Page</Text>
+      <Text>Welcome to the Home Page</Text>
+      <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nulla quas maxime quam consectetur tenetur in quibusdam, voluptatibus excepturi iure aliquam hic quasi, sapiente quae est praesentium nemo at et.
         Debitis expedita inventore consequatur aut ipsam, commodi suscipit ipsum, similique, amet dolorum eius vero cupiditate molestias. Exercitationem eius est beatae! Saepe culpa adipisci porro tempore possimus! Saepe, odio. Tempore, dolorem!
         Unde repellat porro voluptate. Maxime consectetur, at atque distinctio iste eveniet sapiente fugiat, perferendis earum aspernatur vero voluptate adipisci, voluptatum vel! Voluptate et qui assumenda sit, architecto obcaecati ipsam blanditiis.
         Repudiandae reiciendis illo ratione architecto iste. Vitae, pariatur eaque? Molestiae hic aspernatur possimus maiores nostrum similique amet deleniti animi praesentium earum quia molestias quae ex, saepe repudiandae obcaecati officiis tenetur?
-        Facilis error corrupti unde totam distinctio aliquid minima voluptatem assumenda, expedita molestias earum explicabo. Quae natus sit numquam reiciendis. Fuga tempora necessitatibus non quos soluta qui eligendi iure suscipit ducimus.</p>
+        Facilis error corrupti unde totam distinctio aliquid minima voluptatem assumenda, expedita molestias earum explicabo. Quae natus sit numquam reiciendis. Fuga tempora necessitatibus non quos soluta qui eligendi iure suscipit ducimus.</Text>
       <Link href="/login" className='font-blod'>to login</Link>
-    </PageContainerMotion>
+    </Box>
   );
 };
 

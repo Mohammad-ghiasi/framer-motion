@@ -1,20 +1,20 @@
 import Link from 'next/link';
-import PageContainerMotion from '@/motions/PageContainer';
+import { Box, Text } from '@chakra-ui/react';
 
 
 const LoginPage = () => {
     return (
-        <PageContainerMotion
+        <Box
             className="bg-gray-300 p-5 "
         >
-            <h1>Login Page</h1>
-            <p>LoginPage, FramerMotion...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, ipsam? Doloribus, ex laboriosam modi ea, voluptatum ipsam quibusdam maxime explicabo reiciendis asperiores exercitationem. Ea quaerat exercitationem accusantium, consequuntur harum repellendus!
+            <Text>Login Page</Text>
+            <Text>LoginPage, FramerMotion...</Text>
+            <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, ipsam? Doloribus, ex laboriosam modi ea, voluptatum ipsam quibusdam maxime explicabo reiciendis asperiores exercitationem. Ea quaerat exercitationem accusantium, consequuntur harum repellendus!
                 Dolore aperiam libero maxime, suscipit iste animi repudiandae? Voluptas beatae consequatur expedita, harum porro odit numquam possimus ipsum corrupti. Soluta corporis incidunt dolore veniam illum iusto ipsa maiores! Adipisci, molestias.
                 Sapiente numquam deserunt quas cum architecto placeat, molestiae veniam adipisci neque rerum sit dolorum harum doloribus illum delectus laboriosam ipsum totam iure in, inventore minus. Facilis aperiam hic non inventore?
-                Minus et quisquam est rem minima animi vero, accusantium alias nihil autem sint earum aut excepturi aliquam nostrum nisi quod nam dicta eveniet nemo? Ut delectus explicabo autem quis consectetur.</p>
+                Minus et quisquam est rem minima animi vero, accusantium alias nihil autem sint earum aut excepturi aliquam nostrum nisi quod nam dicta eveniet nemo? Ut delectus explicabo autem quis consectetur.</Text>
             <Link href="/" className='font-blod'>to home</Link>
-        </PageContainerMotion>
+        </Box>
     );
 };
 
